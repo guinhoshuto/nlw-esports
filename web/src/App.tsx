@@ -1,20 +1,11 @@
-interface ButtonProps{
-  title: string
-}
-
-function Button(props: ButtonProps){
-  return(
-    <button >
-      {props.title}
-    </button>
-  )
-}
+import './styles/main.css'
+import logo from './assets/Logo.svg'
 
 function App() {
   return(
-    <div>
-      <h1>Hello World</h1>
-      <Button title="oi" />
+    <div className="max-w-[1344px] mx-auto flex flex-col items-center m-20">
+      <img src={logo} alt="" />
+      <h1 className="text-6xl text-white font-black mt-20">Seu <span className="text-transparent bg-nlw-gradient bg-clip-text">duo</span> está aqui</h1>
     </div>
   )
 }
